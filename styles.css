@@ -1,0 +1,140 @@
+.navbar {
+    background-color: hsl(169, 61%, 79%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    --navbar-padding: 15px;
+}
+.navbar-main{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    height: 100%;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: var(--navbar-padding, 15px);
+    display: block;
+    text-align: center;
+}
+.navbar > ul {
+    height: 100%;
+}
+.navbar li {
+    transition: all 0.5s ease-in;
+}
+.navbar li:hover{
+    background-color: hsl(164, 60%, 57%);
+}  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: all 0.5s allow-discrete;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    display: block;
+}
+.navbar input[type='checkbox'], .navbar label {
+    display: none;
+}
+
+#logo {
+    float: left;
+    display: inline;
+    font-weight: bolder;
+    padding: var(--navbar-padding, 15px);
+    margin: 0;
+}
+
+header {
+    padding-top: 2em;
+    font-size: 1.5em;
+}
+header h1 {
+    text-align: center;
+}
+header p {
+    text-align: center;
+    /* font-size: large; */
+}
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    font-size: 1.5em;
+}
+
+.wip {
+    transform: rotate(18deg) translate(2rem,10rem);
+    /* text-align: right; */
+}
+img {
+    max-width: 100%;
+}
+
+@media (max-width:721px) {
+    input[type="checkbox"]:not(:checked) + ul {
+        display: none;
+    }
+    
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: hsl(169, 61%, 79%);
+    }
+    .navbar-main {
+        display: block;
+    } 
+    .navbar ul:last-child {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    nav ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 0.5em;
+    }
+    .navbar label {
+        text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+        align-self: center;
+    }
+} 

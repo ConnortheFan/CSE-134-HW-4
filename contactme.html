@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Me</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <a href="./index.html" id="logo">ConnortheFan</a>
+                <label for="menu" tabindex="0">Menu</label>
+                <input id="menu" type="checkbox">
+                <ul class="navbar-main">
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="./projects/index.html" class="dropdown-btn">Projects</a>
+
+                        <ul class="dropdown-content">
+                            <li><a href="./projects/sudokusolver.html">Sudoku Solver</a></li>
+                            <li><a href="./projects/project2.html">Project 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="./labs/index.html" class="dropdown-btn">Labs</a>
+                    
+                        <ul class="dropdown-content">
+                            <li><a href="./labs/lab1.html">Lab 1</a></li>
+                            <li><a href="./labs/lab2.html">Lab 2</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="./aboutme.html">About Me</a></li>
+
+                    <li><a href="./contactme.html">Contact Me</a></li>
+
+                    <li><a href="./tags.html">Tags</a></li>
+                </ul>
+            </nav>
+
+            <hgroup>
+                <h1>Contact Me</h1>
+
+                <p>To contact me, either reach out at
+                    <address>
+                    email (personal): connorthefan@gmail.com <br>
+                    email (school): cjfan@ucsd.edu <br>
+                    tel: 562-732-3817
+                    </address>
+                <br>
+                or fill out the form below.
+                </p>
+            </hgroup>
+        </header>
+
+        <main>
+            <aside>
+                <p>It doesn't have any functionality now, but maybe it will in the future.</p>
+            </aside>
+
+            <form>
+                <fieldset>
+                    <legend>Contact Me:</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+
+                    <label for="tel">Tel:</label>
+                    <input type="tel" id="tel" name="tel"><br><br>
+
+                    <label for="where">Where are you?</label>
+                    <input list="places" name="where" id="where"><br><br>
+
+                    <datalist id="places">
+                        <option value="San Diego"></option>
+                        <option value="California"></option>
+                        <option value="USA"></option>
+                        <option value="China"></option>
+                    </datalist>
+
+                    <label for="reason">Reason for contact:</label>
+                    <select name="reason" id="reason">
+                        <optgroup label="Reason">
+                            <option value="personal">Personal</option>
+                            <option value="school">School</option>
+                            <option value="work">Work</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <label for="summary">Summary:</label>
+                    <input type="text" id="summary" name="summary"><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+
+</html>
