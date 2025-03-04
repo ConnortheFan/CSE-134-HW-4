@@ -75,10 +75,13 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar">
                 <a href="./index.html" id="logo">ConnortheFan</a>
-                <label for="menu" tabindex="0">Menu</label>
+                <label for="menu" id="menu-label" tabindex="0">Menu</label>
                 <input id="menu" type="checkbox">
                 ${this.links}
-                <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+                <label id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="theme-toggle">
+                    <span class="theme-toggle round"></span>
+                </label>
             </nav>
         `;
     }

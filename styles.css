@@ -89,13 +89,82 @@ body {
     opacity: 1;
     display: block;
 }
-.navbar #menu[type='checkbox'], .navbar label {
+.navbar #menu[type='checkbox'], .navbar #menu-label {
     display: none;
 }
 
-.navbar #theme-toggle[type='checkbox'] {
+/* Based on the following article
+ * https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2
+ */
+.switch {
+    position: relative;
     display: inline-block;
-    margin-right: 3rem;
+    width: 60px;
+    height: 34px;
+    justify-content: center;
+    align-self: center;
+    margin-right: 1rem;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.theme-toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+  
+.theme-toggle:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+input:checked + .theme-toggle {
+    background-color: #2196f3;
+}
+  
+input:focus + .theme-toggle {
+    box-shadow: 0 0 1px #2196f3;
+}
+  
+input:checked + .theme-toggle:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.theme-toggle.round {
+    border-radius: 34px;
+}
+  
+.theme-toggle.round:before {
+    border-radius: 50%;
 }
 
 #logo {
