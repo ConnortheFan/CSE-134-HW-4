@@ -21,12 +21,14 @@
 
         </style>
         
+        <script src="../components/toggleTheme.js"></script>
         <script src="../components/navbar.js"></script>
     </head>
 
     <body>
         <header>
-            <custom-navbar></custom-navbar>
+            <custom-navbar data-nested="1"></custom-navbar>
+            <script>initTheme();</script>
 
             <h1>Lab 1: Canvas</h1>
         </header>

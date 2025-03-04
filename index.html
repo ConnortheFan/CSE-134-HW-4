@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="index.css">
 
         <script src="components/customElement.js"></script>
+        <script src="components/toggleTheme.js"></script>
         <script src="components/navbar.js"></script>
-
+        
         <meta property="og:title" content="Connor Fan's webpage">
         <meta property="og:type" content="article">
         <meta property="og:image" content="https://dreamy-elf-c636de.netlify.app/assets/Starry-Midafternoon.jpg">
@@ -21,12 +22,13 @@
 
     <body>
         <header>
-            <custom-navbar></custom-navbar>
+            <custom-navbar data-nested="0"></custom-navbar>
+            <script>initTheme();</script>
 
             <hgroup>
                 <h1><div id="handwave">&#128075</div> Welcome to <b>Connor Fan's</b> <em>portfolio page!</em></h1>
 
-                <p>This entire website was made from scratch by myself without the assistance of AI, purely from HTML, CSS, and Javascript.</p>
+                <p>This entire website was made from scratch by myself purely from HTML, CSS, and Javascript.</p>
             </hgroup>
         </header>
 

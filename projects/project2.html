@@ -8,12 +8,15 @@
         <title>Project 2</title>
 
         <link rel="stylesheet" href="../styles.css">
+        
+        <script src="../components/toggleTheme.js"></script>
         <script src="../components/navbar.js"></script>
     </head>
 
     <body>
         <header>
-            <custom-navbar></custom-navbar>
+            <custom-navbar data-nested="1"></custom-navbar>
+            <script>initTheme();</script>
 
             <h1>Project 2: Electric Boogaloo</h1>
         </header>

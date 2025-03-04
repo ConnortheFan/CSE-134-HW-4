@@ -1,3 +1,4 @@
+
 const links0 = `
     <ul class="navbar-main">
         <li><a href="./index.html">Home</a></li>
@@ -77,6 +78,7 @@ class Navbar extends HTMLElement {
                 <label for="menu" tabindex="0">Menu</label>
                 <input id="menu" type="checkbox">
                 ${this.links}
+                <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
             </nav>
         `;
     }
