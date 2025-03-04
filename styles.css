@@ -85,7 +85,6 @@ header h1 {
 }
 header p {
     text-align: center;
-    /* font-size: large; */
 }
 
 .flex-main {
@@ -105,7 +104,7 @@ img {
     max-width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width:815px) {
     input[type="checkbox"]:not(:checked) + ul {
         display: none;
     }
