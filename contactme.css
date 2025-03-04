@@ -63,6 +63,23 @@ hgroup {
     
 }
 
-input:invalid, textarea:invalid {
+input:invalid, textarea:invalid, .error {
     border: 1px solid red;
+}
+
+#error-message {
+    display: none;
+    color: red;
+    font-weight: bold;
+    transition: all 1s allow-discrete;
+}
+
+small {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+}
+
+#message {
+    margin-bottom: 0;
 }
