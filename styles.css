@@ -227,12 +227,16 @@ img {
         text-align: right;
         padding: 0.5em;
     }
-    .navbar label {
+    .navbar #menu-label {
         text-align: right;
         display: block;
         padding: 0.5em;
         line-height: 1.6em;
         align-self: center;
+        order: 2;
+    }
+    .navbar #switch {
+        order: 1;
     }
 } 
 
